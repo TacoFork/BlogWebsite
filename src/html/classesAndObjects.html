@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Classes and Objects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About the Bootcamp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="author.html">Blog Author</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container mt-4">
+    <h1 class="contentHead">Classes and Objects</h1>
+    <div class="blogContent bg-light">
+        <p class="date text-muted">7 July 2021</p>
+        <p>
+            <strong>Classes and Objects</strong>
+            <br>
+            First there was functional or top-down programming. All programs had a single entry point and worked their way down,
+            line by line, to a single exit point. They could jump around with various routines and go-to statements but all
+            code was basically one large file. And it got cumbersome.
+            <br><br>
+            <strong>Division of labor</strong>
+            <br>
+            Somehow the idea emerged that you could have a programmer develop code in units or blocks or what is now known as
+            "classes". And these classes could be developed simultaneously and put together in a larger program. And re-used
+            in other programs. And also tested independently. Once tested, they wouldn't have to be tested again.
+            <br><br>
+            <strong>What goes into a class</strong>
+            <br>
+            Each class should have one purpose. Maybe you need a Calendar class to display calendars and perform date arithmetic.
+            Or an Invoice class to display/print an invoice and perform all the calculations. Or an Encryption class which can
+            take some text or a file and return an encrypted version of each. Each class can be used to create objects.
+            These will contain the data and any processing methods to fulfill the purpose of the class.
+            <br><br>
+            <strong>Differences between classes and objects</strong>
+            <br>
+            The class is the code that will be executed, the type of data to be saved and the way it interacts with other
+            things. The object is a particular instance of the class.
+            <br><br>
+            <strong>What happens in Vegas (my class) stays in Vegas (my class)</strong>
+            <br>
+            Encapsulation is the idea that your class is a black box. When we say something is a black box, that means
+            what goes inside the object doesn't matter to the user. You just need to interact with the class through its
+            interface.
+            <br><br>
+            <strong>The interface I show the world</strong>
+            <br>
+            The interface is those methods which are publicly available for use by other programmers.
+            <strong>Extending classes with inheritance</strong>
+            <br>
+            A more generalized class like "Animal" can be extended to a more specialized class like "Cow", "Bird", and
+            "Fish". All the features of Animal are the same among different species. But cows, birds, and fish have their
+            own specialized methods. One can give milk, the other can fly, and the last can swim. Finally, keep in mind that
+            all cows are animals but not all animals are cow.
+        </p>
+        <strong>Reference:</strong> <a href="https://canvas.instructure.com/courses/2991316/pages/classes-and-objects?module_item_id=48399316">
+        https://canvas.instructure.com/courses/2991316/pages/classes-and-objects?module_item_id=48399316</a>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

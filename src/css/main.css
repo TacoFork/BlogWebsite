@@ -1,0 +1,48 @@
+body {
+    background: url(https://i.pinimg.com/originals/15/17/4a/15174a8695a5efa262a6d6897610c8f8.gif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+}
+
+.list-group-item {
+    width: auto;
+    height: auto;
+    padding:2%;
+}
+
+.head {
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    padding-bottom: 7px;
+}
+
+.blogHead {
+    font-weight: bold;
+}
+
+.date {
+    font-style: italic;
+}
+
+.contentHead {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+.blogContent{
+    padding: 3%;
+}
+
+.socialLogo {
+    height: auto;
+    width: 5%;
+}
+

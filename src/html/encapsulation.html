@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Encapsulation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About the Bootcamp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="author.html">Blog Author</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container mt-4">
+    <h1 class="contentHead">Encapsulation</h1>
+    <div class="blogContent bg-light">
+        <p class="date text-muted">7 July 2021</p>
+        <p>
+            Sometimes your class has some internal business to attend to.
+            <br><br>
+            For example, your class may contains a method called save which takes as its argument the filename.
+            <br><br>
+            The class exposes (makes available) the save method.
+            <br><br>
+            Once the user of your class calls the save method your class still has work to do. It must determine if the file
+            exists. If the file doesn't exist then your class must create it on the disk. Then write the data. Finally, close
+            the connection to the file.
+            <br><br>
+            Encapsulation ensures that the user only knows about the save method and not every little detail required to
+            make the save method work.
+        </p>
+        <h5>Public, Private, and Protected, oh my!</h5>
+        <p>
+            Getters/setters only allow private member variables to expose their data IF you want them to expose their data.
+            A variable not exposed via a getter or setter is effectively hidden (unless it's declared public which isn't
+            recommended). It may be used only by the class. If you want that variable to be visible only to your class then
+            declare it as private. If you want it to be visible only to the class and any future subclasses then declare it as
+            protected. In any event the user has no idea it exists. It's secret to my class (and possibly subclasses).
+            <br><br>
+            A variable can have an access modifier
+            <br>
+            <strong>Public</strong> - visible to any class in your program
+            <br>
+            <strong>Private</strong> - visible only to your class (not sub classes)
+            <br>
+            <strong>Protected</strong> - visible to your class and any subclasses (also visible to any classes in the same package)
+            <br>
+            You could also have a variable that has only a getter. That would be a read-only variable. or you could have a
+            variable with only a setter. That would be a write-only variable (not common though).
+            <br><br>
+            You could also have private variables like counters and things that only you class uses and nobody else uses.
+            Since there would be no getters/setters for those variables they would be private to the class. Unless you declared
+            them as protected. Then they would be visible to the class and subclasses.
+        </p>
+        <strong>Reference:</strong> <a href="http://localhost:63342/BlogWebsite/html/encapsulation.html">
+        http://localhost:63342/BlogWebsite/html/encapsulation.html</a>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
